@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="desktop-nav">
+    <div class="logo">Ansh Tripathi</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ansh Tripathi</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <!-- Section -->
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Ansh Tripathi Profile Picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ansh Tripathi</h1>
+      <p class="section__text__p2">Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+
+        <img src="./assets/github.png" alt="My linkeden Profile" class="icon"
+          onclick="location.href='https://linkedin.com/in/ansh-kumar-tripathi-64841a2b5'">
+
+        <img src="./assets/linkedin.png" alt="My Github Profile" class="icon"
+          onclick="location.href='https://github.com/SherifCaptainRed'">
+
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
+      </div>
+      <div class="about-details-containers">
+        <div class="about-containers">
+          <div class="details-containers">
+            <img src="./assets/experience.png" alt="Experinece Icon" class="icon">
+            <h3>Experience</h3>
+            <p>2+ years <br>Frontened Devloper</p>
+          </div>
+          <div class="details-containers">
+            <img src="./assets/education.png" alt="Experinece Icon" class="icon">
+            <h3>Education</h3>
+            <p>B.E. CSE<br>9CGP</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laborum cumque quisquam? Temporibus
+            facilis at sit laudantium laborum dolores repellat error enim magni quam. Aperiam eaque doloribus vero
+            dolore sequi, minima, optio molestias assumenda sit, voluptatum perspiciatis ut consequatur magni incidunt
+            ullam? Dignissimos consectetur voluptates reiciendis fugit distinctio! Ullam, illum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <!-- Experience-Section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-detail-container">
+      <div class="about-containers">
+        <div class="details-containers">
+          <h2 class="experienece-sub-title">Frontened Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Experience</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+              <div>
+                <h3>JAVA SCRIPT</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-containers">
+          <h2 class="experienece-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+              <div>
+                <h3>NodeJs</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+  </section>
+  <!-- Project Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">projects</h1>
+    <div class="experience-detail-container">
+      <div class="about-containers">
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experienece-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+          </div>
+          <h2 class="experienece-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experienece-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get on Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:anshtrips07@gmail.com">anshtrips07@gmail.com</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Linedin icon" class="icon contact-icon">
+        <p><a href="www.linkedin.com/in/ansh-kumar-tripathi-64841a2b5">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <Footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Cpoyright &copy; 2024 Ansh Kumar Tripathi. All Rights Reserved</p>
+  </Footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
